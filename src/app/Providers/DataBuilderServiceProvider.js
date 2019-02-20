@@ -8,7 +8,7 @@ export class DataBuilderServiceProvider extends ServiceProvider {
 
     this.addData({
       name: 'data-builder',
-      description: 'Configure your application',
+      icon: require('../../assets/data-builder-icon.svg'),
       tags: ['system'],
       route: { name: 'data-builders.index' },
     })
