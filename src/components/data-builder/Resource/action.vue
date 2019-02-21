@@ -17,8 +17,8 @@
 </template>
 <script>
 
-import { DataBuilderApi } from '@/modules/data-builder/app/DataBuilderApi'
-import DataBuilderForm from '@/modules/data-builder/components/form'
+import { DataBuilderApi } from '../../../app/Api/DataBuilderApi'
+import DataBuilderForm from '../form'
 
 export default {
   props: ['id', 'form', 'api', 'handler'],
