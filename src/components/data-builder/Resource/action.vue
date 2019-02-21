@@ -1,7 +1,7 @@
 <template>
   <div class="c" v-if="executor && executor.data_builder">
     <v-dialog v-model="showDialog" width="500">
-      <v-btn color="primary" flat icon @click="showDialog = true" slot="activator"><v-icon>adjust</v-icon></v-btn>
+      <v-btn color="primary" flat icon slot="activator"><v-icon>adjust</v-icon></v-btn>
       <v-card>
         <v-card-title class="headline grey lighten-2" primary-title>{{ $t('execute.title')}}</v-card-title>
         <data-builder-form class='content' :dataBuilder="executor.data_builder" :form="report.form" :errors="report.errors" />

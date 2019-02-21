@@ -8,7 +8,7 @@
 
     <div v-for="attr,name in $root.parseYaml(dataBuilder.input)"  class="form-group">
         <v-text-field v-if="attr.type === 'text'" :label="name" v-model="form[name]"></v-text-field>
-        <v-text-field v-if="attr.type === 'integer'" :label="name" v-model="form[name]"></v-text-field>
+        <v-text-field v-if="attr.type === 'integer' || attr.type === 'int'" :label="name" v-model="form[name]"></v-text-field>
 
         <div v-if="attr.type === 'date'">
           <v-menu
