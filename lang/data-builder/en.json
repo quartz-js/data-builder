@@ -1,5 +1,11 @@
 {
   "$quartz": {
+    "core": {
+      "execute": {
+        "title": "Execute",
+        "action": "Execute"
+      }
+    },
     "data": {
       "data-builder": {
         "name": "DataBuilder",
