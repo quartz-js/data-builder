@@ -17,6 +17,7 @@ export default new Manager({
     new Attributes.Base('class_arguments'),
     new Attributes.Base('input'),
     new Attributes.Base('mock_data'),
+    new Attributes.Base('include'),
     new Attributes.DateTime('created_at'),
     new Attributes.DateTime('updated_at')
   ]
