@@ -1,11 +1,12 @@
 <template>
   <div class="c" v-if="executor && executor.data_builder">
     <v-dialog v-model="showDialog" width="500">
-      <v-btn color="primary" flat icon slot="activator" class='ma-0 mx-1'><v-icon>adjust</v-icon></v-btn>
+      <slot name='activator' slot="activator">
+        <v-btn color="primary" flat icon class='ma-0 mx-1'><v-icon>adjust</v-icon></v-btn>
+      </slot>
       <v-card>
         <v-card-title class="headline grey lighten-2" primary-title>{{ $t('$quartz.core.execute.title')}}</v-card-title>
         <data-builder-form class='content' :dataBuilder="executor.data_builder" :form="report.form" :errors="report.errors" />
-
         <v-card-actions>
           <v-spacer></v-spacer>
           <v-btn primary @click="generate(executor, report.form)">{{ $t('$quartz.core.execute.action') }}</v-btn>
