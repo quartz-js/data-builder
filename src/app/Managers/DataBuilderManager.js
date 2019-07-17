@@ -1,5 +1,5 @@
 import { DataBuilderApi } from '../Api/DataBuilderApi'
-import { container, Attributes, Manager } from '@railken/quartz-core'
+import { container, Attributes, Manager } from '@quartz/core'
 
 export default new Manager({
   name: 'data-builder',

@@ -1,4 +1,4 @@
-import { Attributes } from '@railken/quartz-core'
+import { Attributes } from '@quartz/core'
 import { DataBuilderApi } from './../Api/DataBuilderApi'
 
 export class DataBuilderAttribute extends Attributes.BelongsTo {
